@@ -1,16 +1,22 @@
-# sistem_login
+# Sistema de Login com Firebase
 
-A new Flutter project.
+Este projeto foi idealizado para a criação de uma tela de login utilizando Email e senha para se logar no App usando o sistema Firebase como banco de dados.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Depois de ter configurado o [Firebase](https://firebase.google.com/docs/android/setup), você deve rodar os seguintes comandos.
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+npm install -g firebase-tools
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+dart pub global activate flutterfire_cli
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutterfire configure
+```
+Obs.:
+Você deve lembrar de adicionar o Flutterfire nas suas Variaveis de Ambiente para o comando funcionar, e também deve rodar o comando, ```firebase login```, para que assim possa estar logado no sistema do firebase com sua conta.
+
